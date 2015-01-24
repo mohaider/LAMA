@@ -9,10 +9,10 @@ public class CrowdMovement : MonoBehaviour {
     float startPosition;
     [SerializeField]
     float endPosition;
-    [SerializeField]
-    float frontCharacter;
+    ArrayList players;
     // Use this for initialization
 	void Start () {
+        //players.
 	}
 	
 	// Update is called once per frame
