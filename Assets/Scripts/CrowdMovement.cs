@@ -13,7 +13,7 @@ public class CrowdMovement : MonoBehaviour {
     [SerializeField]
     float endPosition;
     
-    ArrayList players;
+    GameObject[] players;
 
     float zoomCooldown;
     bool zoomIn;
@@ -24,7 +24,13 @@ public class CrowdMovement : MonoBehaviour {
         //players.
         zoomCooldown = Time.time;
         zoomIn = false;
-
+        players = GameObject.FindGameObjectsWithTag("Player");
+        for(int i = 0; i < players.Length; i++){
+            print(players[i].name);
+            players[i].transform.position = new Vector3(-4.96f - (i * 1.34f), -2.55f + ((i%2)*0.55f), 9f);
+        }
+        
+        //        players.Add();
 	}
 	
 	// Update is called once per frame
