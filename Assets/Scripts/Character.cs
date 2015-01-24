@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class Character : MonoBehaviour {
+	public int Hp;
 	public float Speed;
 	public float JumpForce;
 

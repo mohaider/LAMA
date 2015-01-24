@@ -13,7 +13,7 @@ public class Combat : MonoBehaviour {
 
 	public Transform Troop;
 	public Transform CurrentMonster;
-	private BattleStates states;
+	static public BattleStates states;
 
 	// Use this for initialization
 	void Start () {

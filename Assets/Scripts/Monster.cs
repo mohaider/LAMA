@@ -19,10 +19,15 @@ public class Monster : MonoBehaviour {
 	}
 
 	public void Attack(Transform Troop){
+		bool lose=true;
 		Character[] charactersScript =Troop.GetComponentsInChildren<Character>();
 		for (int i=0;i<charactersScript.Length;i++){
 			charactersScript[i].ReceiveDamages(atq);
+			if(charactersScript[i].Hp>0)
+				lose=lose+false;
 		}
+		
+		Combat.states=Combat.BattleStates.PLAYERCHOICE;
 
 	}
 
