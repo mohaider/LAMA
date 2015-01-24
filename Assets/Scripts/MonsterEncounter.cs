@@ -7,6 +7,13 @@ public class MonsterEncounter : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		DecisionList.Add("Attack");
+		DecisionList.Add(" Defend / Dodge");                
+		DecisionList.Add("flee");
+		DecisionList.Add("Build a shelter / Hide");
+		DecisionList.Add("Sacrifice a member of the team");
+		DecisionList.Add("Sabotage the group decision");
+
 	
 	}
 	

@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class Character : MonoBehaviour {
+	public int Hp;
 	public float Speed;
 	public float JumpForce;
 
@@ -49,6 +50,10 @@ public class Character : MonoBehaviour {
 		}
 		
 		m_Body.velocity = movementVelocity;
+	}
+
+	public void ReceiveDamages(int atq){
+		
 	}
 
 	void Vote(){
