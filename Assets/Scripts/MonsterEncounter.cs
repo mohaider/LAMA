@@ -3,6 +3,8 @@ using System.Collections;
 
 public class MonsterEncounter : MonoBehaviour {
 
+	public ArrayList DecisionList;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -12,4 +14,24 @@ public class MonsterEncounter : MonoBehaviour {
 	void Update () {
 	
 	}
+
+	void Print(){ //OnGUI?
+		#if UNITY_IPHONE
+		Debug.Log("Iphone");
+		#endif
+		
+		#if UNITY_STANDALONE_OSX
+		Debug.Log("Stand Alone OSX");
+		#endif
+		
+		#if UNITY_STANDALONE_WIN
+		Debug.Log("Stand Alone Windows");
+		#endif
+		
+		
+		#if UNITY_ANDROID 
+		
+		#endif
+	}
+
 }

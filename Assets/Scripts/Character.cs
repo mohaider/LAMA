@@ -50,6 +50,12 @@ public class Character : MonoBehaviour {
 		
 		m_Body.velocity = movementVelocity;
 	}
+
+	void Vote(){
+		#if UNITY_ANDROID 
+		
+		#endif
+	}
 	
 
 }
