@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class americans : MonoBehaviour {
+public class CameraMovement : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -12,4 +12,8 @@ public class americans : MonoBehaviour {
 	void Update () {
 	
 	}
+
+    void move(Vector3 direction) {
+        transform.position += direction;
+    }
 }
