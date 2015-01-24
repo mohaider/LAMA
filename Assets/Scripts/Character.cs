@@ -56,6 +56,19 @@ public class Character : MonoBehaviour {
 		
 		#endif
 	}
+    //enable voting
+    public void EnableVoting()
+    { 
+        //show buttons here
+    
+    }
+    /// <summary>
+    ///  disable buttons and show place holder instead
+    /// </summary>
+    public void DisableVoting()
+    {
+        
+    }
 	
 
 }

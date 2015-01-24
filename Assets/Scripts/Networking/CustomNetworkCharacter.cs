@@ -3,6 +3,8 @@ using System.Collections;
 
 public class CustomNetworkCharacter : MonoBehaviour {
 
+    public bool isVoting = false;
+
 	private Vector3 correctPlayerPos = Vector3.zero; // We lerp towards this
 	//private Quaternion correctPlayerRot = Quaternion.identity; // We lerp towards this
 	// Update is called once per frame
@@ -24,6 +26,7 @@ public class CustomNetworkCharacter : MonoBehaviour {
 			//stream.SendNext(transform.rotation);
 			Character myC= GetComponent<Character>();
 			//stream.SendNext((int)myC._characterState);
+
 		}
 		else
 		{
