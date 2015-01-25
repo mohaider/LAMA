@@ -236,7 +236,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45701dd19c58a2845861f286b9e5a482, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TroupLeader: {fileID: 0}
+  TroupLeader: {fileID: 956905689}
+--- !u!1 &956905688
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 956905689}
+  m_Layer: 0
+  m_Name: Big_daddy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &956905689
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 956905688}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.2766495, y: -.189135119, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
 --- !u!1001 &1512506238
 Prefab:
   m_ObjectHideFlags: 0

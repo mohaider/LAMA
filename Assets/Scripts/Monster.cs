@@ -24,7 +24,7 @@ public class Monster : MonoBehaviour {
 		for (int i=0;i<charactersScript.Length;i++){
 			charactersScript[i].ReceiveDamages(atq);
 			if(charactersScript[i].Hp>0)
-				lose=lose+false;
+                lose = false;
 		}
 		
 		Combat.states=Combat.BattleStates.PLAYERCHOICE;

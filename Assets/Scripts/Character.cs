@@ -8,13 +8,15 @@ public class Character : MonoBehaviour {
 
 	Rigidbody2D m_Body;
 	PhotonView m_PhotonView;
-
+    VotingView voteView;
 	
 	void Awake() 
 	{
 		//m_Animator = GetComponent<Animator>();
 		m_Body = GetComponent<Rigidbody2D>();
 		m_PhotonView = GetComponent<PhotonView>();
+        voteView = this.gameObject.AddComponent<VotingView>();
+        voteView.enabledButtons = false;
 	}
 	
 	void Update() 
@@ -65,6 +67,8 @@ public class Character : MonoBehaviour {
     public void EnableVoting()
     { 
         //show buttons here
+
+        voteView.enabledButtons = true;
     
     }
     /// <summary>
@@ -72,7 +76,7 @@ public class Character : MonoBehaviour {
     /// </summary>
     public void DisableVoting()
     {
-        
+        voteView.enabledButtons = false;
     }
 	
 

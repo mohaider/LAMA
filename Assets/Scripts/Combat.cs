@@ -8,7 +8,7 @@ public class Combat : MonoBehaviour {
 		PLAYERCHOICE,
 		ENEMYCHOICE,
 		LOSE,
-		WIN,
+		WIN
 	};
 
 	public Transform Troop;
@@ -28,10 +28,17 @@ public class Combat : MonoBehaviour {
 			//anything to do on start?
 			break;
 		case BattleStates.PLAYERCHOICE:
-			//Player take their decision
+			//clear out previous vote values
+            SuperDaddy.bucket1 = SuperDaddy.bucket2 = SuperDaddy.bucket3 = 0;
+            //begin the voting process
+            GameObject superDad = GameObject.FindGameObjectWithTag("BigDaddy");
+            SuperDaddy bigPOPPA = superDad.GetComponent<SuperDaddy>();
+            bigPOPPA.StartTheVoting();
+            //Player take their decision
 			break;
 		case BattleStates.ENEMYCHOICE:
 			//ennemy attacks
+            
 			Monster monsterScript= CurrentMonster.GetComponent<Monster>();
 			monsterScript.Attack(Troop);
 			break;
