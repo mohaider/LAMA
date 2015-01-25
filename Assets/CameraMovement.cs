@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EventTrigger : MonoBehaviour {
+public class CameraMovement : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -13,10 +13,7 @@ public class EventTrigger : MonoBehaviour {
 	
 	}
 
-    void OnTriggerEnter2D(Collider2D obj) { 
-        if(obj.name.Equals("Treasure Box")){
-
-        }
-
+    void move(Vector3 direction) {
+        transform.position += direction;
     }
 }
